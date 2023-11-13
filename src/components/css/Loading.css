@@ -1,0 +1,23 @@
+/* Loading.css */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  font-size: 40px;
+  animation: spin 2s linear infinite;
+  font-family: 'Goldman', sans-serif;
+  color: #fc4bffc2;                                              
+}
+
+@keyframes spin {
+  0% {
+    transform: skewY(0deg);
+  }
+  100% {
+    transform: skewY(360deg);
+  }
+}

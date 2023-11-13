@@ -1,0 +1,30 @@
+.experiences {
+  color: rgba(186, 186, 186, 0.861);
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+}
+.first-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+}
+.first-row h1{
+    font-family: 'Goldman', sans-serif;  
+    font-size: 80px;
+    height: auto;
+    margin-top: 40px;
+    color: rgb(255, 4, 251);
+}
+
+.first-row p{
+    margin-top: 20px;
+}
+
+#zoom-in #zoom-out{
+    color: rgb(255, 4, 251);
+}

@@ -1,0 +1,26 @@
+.experience-section{
+   width: 700px;
+}
+.experience-section h4{
+   margin-top: -5px;
+}
+.experience-section h2{
+    color: rgb(209, 193, 193);
+    font-size: 14px;
+    font-family: "Roboto mono";
+}
+.experience-section h6{
+    font-family: "Roboto mono";
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: -2px;
+}
+.experience-section h4{
+    color: white;
+}
+.experience-section .company-name{
+    color: rgb(255, 4, 251);
+    font-size: 20px;
+    margin-top: -10px;
+    font-family: "Inter";
+}
