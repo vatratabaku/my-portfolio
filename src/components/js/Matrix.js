@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from "./css/Canvas.module.css";
+
 
 const Matrix = () => {
     const [showMatrix, setShowMatrix] = useState(true);

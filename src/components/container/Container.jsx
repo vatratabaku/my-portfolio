@@ -86,31 +86,6 @@ function Container({ href }) {
 
           <div className="text">Show More</div>
         </motion.button>
-        <div
-          style={{
-            width: "80px",
-            display: "flex",
-            justifyContent: "space-around",
-            marginTop: "20px",
-          }}
-        >
-          <a
-            href="https://www.linkedin.com/in/vatra-tabaku-a7366525b/"
-            className={`double-jump-link ${clicked ? "jump" : ""}`}
-            onClick={handleClick}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-          </a>
-          <a
-            href="https://github.com/vatratabaku"
-            className={`double-jump-link ${clicked ? "jump" : ""}`}
-            onClick={handleClick}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} className="icon" />
-          </a>
-        </div>
       </div>
 
     </div>

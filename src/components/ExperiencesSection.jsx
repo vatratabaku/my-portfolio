@@ -1,5 +1,5 @@
 import Experience from "./Experince";
-import experiences from "./experiences";
+import experiences from "./js/experiences";
 
 function ExperiencesSection() {
   return (

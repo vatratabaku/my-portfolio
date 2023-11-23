@@ -20,7 +20,7 @@ function AboutLayout() {
           </motion.h1>
           <ExperiencesSection></ExperiencesSection>
         </div>
-        <ProjectsSection></ProjectsSection>
+    
       </div>
     </>
   );
