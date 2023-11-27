@@ -16,10 +16,12 @@ function AboutLayout() {
             transition={{ duration: 0.3, delay: 0.2 }}
             className="title"
           >
-            MY EXPERIENCES
+             EXPERIENCES
           </motion.h1>
           <ExperiencesSection></ExperiencesSection>
         </div>
+        <ProjectsSection></ProjectsSection>
+
     
       </div>
     </>

@@ -61,7 +61,8 @@ function Container({ href }) {
           exit={{ x: 100, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-        I'm a Frontend Developer who loves creating great user experiences and interfaces. I work with HTML, CSS, JavaScript, and React JS. I'm skilled in using advanced tools like React Hooks for managing states efficiently, Context for handling props smoothly, Redux for strong state management, and the React Router Library for building dynamic Single Page Applications. My goal is to make websites that not only work well but also look good.
+      I'm a Frontend Developer who loves creating great user experiences and interfaces. I work with HTML, CSS, JavaScript, and React JS. I'm skilled in using advanced tools like React Hooks, Context for handling props and managing complex states, the React Router Library for building dynamic Single Page Applications (SPA). Also I have experience with some other tools like tailwind css, sass, bootstrap, and basic concepts of typescript.
+
         </motion.h5>
         <motion.button
           className="button"

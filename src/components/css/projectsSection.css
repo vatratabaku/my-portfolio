@@ -1,15 +1,93 @@
 .projects-section {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projects-section .title {
+  width: 100%;
   color: #ff04fb;
   text-align: center;
   font-family: "Goldman";
   font-size: 40px;
   margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.projects-cards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 
+.card{
+  width: 480px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: rgb(175, 175, 175);
+  padding: 30px;
+  margin: 15px;
+}
 
+.card .image{
+   width: 450px;
+   height: 280px;
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   background-color: #1a1c23;
+   border-top-left-radius: 38px;
+   border-top-right-radius: 38px;
+}
+
+.image img{
+  width: 390px;
+  height: 240px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.card h5{
+  color: #ff04fb;
+  width: 105px;
+  height: 30px;
+  padding: 5px;
+  background-color: #1e1f25;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Poppins";
+  margin-right: 18px;
+}
+
+.icons-row{
+  width: 450px;
+  display: flex;
+  padding: 10px;
+  margin-top: -38px;
+}
+
+.card p{
+  padding: 10px;
+  margin-top: -26px;
+  font-family: "Poppins";
+}
+
+.card h2{
+  font-family: "Poppins";
+  margin-left: 10px;
+  color: #dfdfdf;
+}
+.textbox{
+  width: 450px;
+  background-color: rgba(6, 8, 19, 0.915);
+  padding: 10px;
+  border-bottom-left-radius: 38px;
+  border-bottom-right-radius: 38px;
+}

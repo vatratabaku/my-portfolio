@@ -19,6 +19,7 @@ function ContactLayout() {
         <br />
           <textarea placeholder="Message" type="text" className="textInput my-textarea"></textarea>
         </div>
+        <button>Send</button>
     </div>
   );
 }

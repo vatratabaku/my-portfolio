@@ -84,6 +84,7 @@
   border-left: none;
   border-bottom: none;
   border-right: none;
+  font-family: "Poppins";
 }
 .textInputWrapper .my-textarea {
   width: 400px;
@@ -95,6 +96,7 @@
 }
 .textInputWrapper .firstInput {
   width: 196px;
+  font-family: "Poppins";
 }
 .textInputWrapper .textInput:focus,
 .textInputWrapper .textInput:active {
@@ -105,6 +107,7 @@
 .textInputWrapper .textInput:focus,
 .textInputWrapper .textInput:active {
   background-color: #0b0a14;
+ 
 }
 
 .textInputWrapper:focus-within .textInput::placeholder {
@@ -113,11 +116,13 @@
 .firstFormRow {
   width: 400px;
   display: flex;
+
 }
 textarea {
   width: 250px;
   height: 300px;
   max-height: 400px;
+  font-family: "Poppins";
 }
 
 
@@ -128,4 +133,21 @@ h1{
   letter-spacing: 5px;
   font-weight: 400;
 
+}
+
+button{
+  width: 400px;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 6px;
+  background: transparent;
+  border: #ff04fb 3px solid;
+  color: white;
+  border-radius: 11px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: rgb(255, 4, 251);
+  cursor: pointer;
 }

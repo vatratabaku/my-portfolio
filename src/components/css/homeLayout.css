@@ -69,7 +69,6 @@ canvas {
   border-radius: 11px;
   text-align: right;
   transition: all 0.3s ease;
-  font-family: "Roboto mono";
   padding: 8px;
   font-weight: 500;
 }
@@ -105,17 +104,7 @@ canvas {
   transition: 0.2s;
 }
 
-.double-jump-link {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
 
-.double-jump-link.jump {
-  animation: doubleJump 0.6s 2; /* Two jumps in 0.6 seconds */
-}
 
 .myDiv {
   display: flex;
