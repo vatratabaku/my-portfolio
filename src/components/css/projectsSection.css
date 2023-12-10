@@ -7,37 +7,36 @@
 }
 
 .projects-section .title {
-  width: 100%;
+  width: 83%;
   color: #ff04fb;
   text-align: center;
   font-family: "Goldman";
-  font-size: 40px;
-  margin-top: 20px;
+  font-size: 50px;
+  margin-top: 70px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  letter-spacing: -1px;
 }
 
 .projects-cards{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
 }
 
 .card{
-  width: 480px;
+  width: 570px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   color: rgb(175, 175, 175);
   padding: 30px;
-  margin: 15px;
 }
 
 .card .image{
-   width: 450px;
+   width: 570px;
    height: 280px;
    display: flex;
    justify-content: center;
@@ -48,7 +47,7 @@
 }
 
 .image img{
-  width: 390px;
+  width: 480px;
   height: 240px;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -56,7 +55,7 @@
 
 .card h5{
   color: #ff04fb;
-  width: 105px;
+  width: 115px;
   height: 30px;
   padding: 5px;
   background-color: #1e1f25;
@@ -64,6 +63,8 @@
   text-align: center;
   font-family: "Poppins";
   margin-right: 18px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .icons-row{
@@ -71,7 +72,10 @@
   display: flex;
   padding: 10px;
   margin-top: -38px;
+  transition: 2s;
 }
+
+
 
 .card p{
   padding: 10px;
@@ -85,9 +89,13 @@
   color: #dfdfdf;
 }
 .textbox{
-  width: 450px;
+  width: 570px;
   background-color: rgba(6, 8, 19, 0.915);
   padding: 10px;
   border-bottom-left-radius: 38px;
   border-bottom-right-radius: 38px;
+}
+
+.demo-link{
+  margin-left: 12px;
 }
