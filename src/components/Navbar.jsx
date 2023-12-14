@@ -43,7 +43,7 @@ function Navbar() {
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active-link" : "link"
             }
-            to="/project"
+            to="/projects"
           >
             Projects
           </NavLink>

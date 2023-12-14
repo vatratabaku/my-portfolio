@@ -24,17 +24,18 @@
 }
 
 .content h1 {
-  font-size: 55px;
-  height: 200px;
+  font-size: 65px;
+  height: 460px;
   font-weight: 300;
   color: #ff04fb;
   margin-left: -10px;
   letter-spacing: -1px;
+  margin-bottom: 25px;
 }
 
 h5 {
   font-family: "Roboto mono";
-  font-weight: 700;
+  font-weight: 400;
   line-height: 24px;
   font-size: 25px;
   color: rgb(184, 184, 184);
@@ -67,14 +68,18 @@ canvas {
   font-family: "Poppins";
   font-weight: 500;
   font-size: 16px;
-  margin-top: -50px;
-  padding-top: 20px;
+  margin-top: -32px;
+  padding-top: 5px;
+}
 
+.content span{
+  color: #ff04fb;
 }
 
 .content h5 {
   font-size: 17px;
-  margin-top: 10px;
+  margin-top: -1px;
+  color: rgb(162, 162, 162);
 
 }
 
