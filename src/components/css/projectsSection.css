@@ -44,6 +44,7 @@
    background-color: #1a1c23;
    border-top-left-radius: 38px;
    border-top-right-radius: 38px;
+   position: relative;
 }
 
 .image img{
@@ -51,7 +52,10 @@
   height: 240px;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
+
 }
+
+
 
 .card h5{
   color: #ff04fb;
@@ -97,5 +101,8 @@
 }
 
 .demo-link{
-  margin-left: 12px;
+  padding: 20px;
+  color: #ff04fb;
+  text-decoration: none;
+
 }

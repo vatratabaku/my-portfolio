@@ -19,56 +19,81 @@ ul li{
     color:#FB4BFF;
 } */
 .navbar {
-    width: 60px; /* Adjust the width of the vertical navbar as needed */
-    height: 100vh;
-    background-color: #030309; 
-    color: #fff;
-    position: sticky;
-    top:0;
-    left: 0;
-    z-index: 20;
-    display: flex;
-    flex-direction: row;
-    overflow-y: hidden;
-    writing-mode: vertical-rl;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-  }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navbar li {
-    margin: 15px 0;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #dcdcdc;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin-top: 25px;
-  }
-
-  
-.links {
-    text-decoration: none;
-    color: rgb(227, 227, 227);
-    border: 0;
-    font-family: 'Poppins', sans-serif;
+  width: 60px; /* Adjust the width of the vertical navbar as needed */
+  height: 100vh;
+  background-color: #030309;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  writing-mode: vertical-rl;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: -1px;
 }
 
-.active-links:hover{
-    border-right: 2px solid rgb(255, 4, 251);
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
-li img{
-    width: 45px;
+.navbar li {
+  margin: 0 0;
 }
+
+.navbar a {
+  text-decoration: none;
+  color: #dcdcdc;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 25px;
+  padding: 16px;
+  border-radius: 3px;
+}
+
+.navbar .link {
+  text-decoration: none;
+  color: rgb(227, 227, 227);
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar .link:hover {
+  border-right: 2px solid rgb(255, 4, 251);
+}
+
+.navbar a.active-link {
+  background-color: #13121A;
+  border-right: 2px solid rgb(255, 4, 251);
+}
+
+li img {
+  width: 45px;
+  margin-top: 12px;
+}
+
+li img:hover{
+  transform: rotate(360deg);
+  transition: 0.3s all ease-in-out;
+}
+
+.linkedin:hover {
+  transform: rotate(270deg);
+  transition: 0.3s all ease-in-out;
+}
+
+.github:hover {
+  transform: rotate(270deg);
+  transition: 0.3s all ease-in-out;
+}
+
+

@@ -7,13 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => {
-    setIsActive(true);
-    console.log(isActive);
-  };
-
   return (
     <motion.nav
       className="navbar"
@@ -26,62 +19,72 @@ function Navbar() {
           <img src={logo} alt="" />
         </li>
         <li>
-          <Link className="active-links" onClick={handleClick} to="/">
+          <NavLink
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active-link" : "link"
+            }
+            to="/"
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link className="active-links" to="/about" onClick={handleClick}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={isActive ? "active-links" : "links"}
+          <NavLink
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active-link" : "link"
+            }
             to="/about"
-            onClick={handleClick}
+          >
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active-link" : "link"
+            }
+            to="/project"
           >
             Projects
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
-            className={isActive ? "active-links" : "links"}
+          <NavLink
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active-link" : "link"
+            }
             to="/contact"
-            onClick={handleClick}
           >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div
-          style={{
-            width: "180px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-evenly",
-            alignItems: "flex-start",
-            transform: "rotate(90deg)",
-            height: "210px",
-          }}
+        style={{
+          width: "130px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-evenly",
+          alignItems: "flex-start",
+          transform: "rotate(90deg)",
+          height: "190px",
+        }}
+      >
+        <a
+          href="https://www.linkedin.com/in/vatra-tabaku-a7366525b/"
+          target="_blank"
+          className="linkedin"
         >
-          <a
-            href="https://www.linkedin.com/in/vatra-tabaku-a7366525b/"
-       
-            onClick={handleClick}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-          </a>
-          <a
-            href="https://github.com/vatratabaku"
-          
-            onClick={handleClick}
-            target="_blank"
-          >
-            <FontAwesomeIcon icon={faGithub} className="icon" />
-          </a>
-        </div>
+          <FontAwesomeIcon icon={faLinkedin} className="icon" />
+        </a>
+        <a
+          href="https://github.com/vatratabaku"
+          target="_blank"
+          className="github"
+        >
+          <FontAwesomeIcon icon={faGithub} className="icon" />
+        </a>
+      </div>
     </motion.nav>
   );
 }

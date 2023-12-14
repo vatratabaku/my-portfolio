@@ -1,24 +1,24 @@
-import "../components/css/detailsSection.css"
-
+import "../components/css/detailsSection.css";
 
 function DetailsSection() {
   return (
     <div className="details-container">
       <h1>ABOUT ME</h1>
       <div className="wrapper">
-        <div className="content">
+        <div className="text-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            corrupti necessitatibus, nemo placeat earum inventore similique
-            ratione ullam aperiam ab sed quod magnam dignissimos totam optio
-            quas ipsam culpa. Reprehenderit. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Suscipit aliquam, aliquid deserunt
-            rerum eveniet tempora dicta aperiam. Repellat nesciunt eos
-            perspiciatis maxime accusantium, quo dolor, quaerat iste animi
-            incidunt a. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolores iusto alias nam nemo voluptas praesentium corporis id, natus
-            numquam non distinctio ab sed dicta hic eum soluta, ducimus,
-            necessitatibus iure.
+            Hey! 👋 I'm Vatra Tabaku, a React.js developer passionate about
+            building intuitive web applications. My coding journey involves
+            creating: Blog Post: Sharing tech insights and discoveries. Weather
+            App: Real-time weather forecasts with a user-friendly interface.
+            Todo App: Streamlining task management with React's state
+            management. Currency Converter: Enhancing global connectivity
+            through seamless currency conversion. Furniture Shop: Crafting
+            visually appealing and functional online stores. Search and Sort:
+            Implementing efficient algorithms for dynamic user experiences.
+            Clothes Shop: Creating immersive online shopping experiences with
+            React.js. Driven by challenges and a love for impactful solutions,
+            together!
           </p>
         </div>
       </div>

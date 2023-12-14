@@ -5,8 +5,19 @@
   justify-content: space-between;
   align-items: center;
 }
-.forms-wraper {
+.forms-wrapper {
   width: 980px;
+}
+
+.forms-wrapper h1{
+  text-align: start;
+  letter-spacing: -1px;
+  font-size: 60px;
+}
+
+form{
+  width: 100%;
+  margin-top: 5px;
 }
 
 .textInputWrapper {
@@ -113,29 +124,32 @@
 .textInputWrapper:focus-within .textInput::placeholder {
   opacity: 0;
 }
-.firstFormRow {
-  width: 400px;
-  display: flex;
 
+.firstFormRow {
+  width: 410px !important; 
+  display: flex;
+}
+.second-row{
+  margin-top: -1px;
 }
 textarea {
   width: 250px;
   height: 300px;
   max-height: 400px;
   font-family: "Poppins";
+  border-top: 1px solid rgb(96, 96, 96);
 }
 
 
 h1{
   color: #ff04fb;
   font-family: "Goldman", sans-serif;
-  font-size: 50px;
-  letter-spacing: 5px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 500;
 
 }
 
-button{
+.inputButton{
   width: 400px;
   height: 35px;
   margin-top: 20px;
@@ -147,7 +161,14 @@ button{
   font-size: 15px;
 }
 
-button:hover {
+.inputButton:hover {
   background-color: rgb(255, 4, 251);
   cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1800px){
+  .container{
+    margin-left: -190px;
+  }
 }

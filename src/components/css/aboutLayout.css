@@ -9,11 +9,13 @@
 }
 .first-row {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
   padding: 10px;
-  align-items: center;
   box-sizing: border-box;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .first-row h1 {
