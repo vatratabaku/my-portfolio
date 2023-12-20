@@ -43,6 +43,7 @@ ul li{
   align-items: center;
   list-style: none;
   padding: 0;
+  margin-top: -5px;
 }
 
 .navbar li {
@@ -54,10 +55,9 @@ ul li{
   color: #dcdcdc;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 25px;
   padding: 16px;
-  border-radius: 3px;
 }
 
 .navbar .link {
@@ -96,4 +96,42 @@ li img:hover{
   transition: 0.3s all ease-in-out;
 }
 
+.logo{
+  margin-top: -5px !important;
+}
 
+
+
+@media only screen and (min-width: 1800px){
+  .navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar ul li{
+    margin-left: -5px;
+  }
+  .navbar a{
+    margin-left: -5px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+
+li img:hover{
+  transform: rotate(360deg);
+  transition: 0.3s all ease-in-out;
+}
+
+.linkedin:hover {
+  transform: rotate(270deg);
+  transition: 0.3s all ease-in-out;
+}
+
+.github:hover {
+  transform: rotate(270deg);
+  transition: 0.3s all ease-in-out;
+}
+  
+}

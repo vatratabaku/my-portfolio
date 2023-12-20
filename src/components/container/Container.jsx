@@ -1,26 +1,13 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 
 function Container({ href }) { 
-  let text = "VATRA TABAKU  ";
+  let text = "VATRA TABAKU";
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [clicked, setClicked] = useState(false);
-
-  const handleClick = () => {
-    setClicked(true);
 
 
-    setTimeout(() => {
-      window.open(href, "_blank");
-    }, 1000);
-  };
-
- 
 
   useEffect(() => {
     const typingAnimation = () => {
@@ -85,7 +72,7 @@ function Container({ href }) {
             ></path>
           </svg>
 
-          <div className="text">Show More</div>
+          <div className="text"> <a className="cv-link" href="Vatra Tabaku.pdf" download="Vatra Tabaku.pdf">RESUME</a></div>
         </motion.button>
       </div>
 

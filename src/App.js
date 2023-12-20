@@ -6,6 +6,7 @@ import About from "./pages/About";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import HomeLayout from "./components/HomeLayout";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,8 @@ function App() {
       setIsLoading(false);
     }, 2000);
   }, []);
+
+
 
   return (
     <div className="App">

@@ -1,24 +1,19 @@
 const experiences = [
   {
     id: 0,
-    jobTitle: "Programming Instructor",
+    jobTitle: "Assistant Trainer / Programming Trainer",
     companyName: "jCoders Academy",
-    desc: "Enhanced coding skills while teaching multiple programming languages and improved communication abilities to help students understand complex concepts.",
-    date: "May 2023 - Present",
+    desc: ['Taught multiple programming languages', 'Equipped students with a core understanding of programming concepts', 'Engaged in close communication and collaboration with senior trainers on new promising projects.', 'Contributed on projects like: Alea furniture, Weather App, Library System, Blog Post App etc.'],
+    date: "Nov 2022 - Present",
+    techStack: ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS', 'TYPESCRIPT', 'SASS', 'TAILWIND CSS']
   },
   {
     id: 1,
-    jobTitle: "Assistant Trainer",
-    companyName: "jCoders Academy",
-    desc: "Implemented student projects across multiple programming languages, featuring a Weather App, Blog Post system, Simple Quiz, and a responsive furniture website.",
-    date: "Nov 2022 - Present",
-  },
-  {
-    id: 3,
     jobTitle: "Intern/Frontend Developer",
     companyName: "System Alfa Tech - Pejë",
-    desc: "Designed and developed responsive website UI with HTML, CSS, and JavaScript. Proficient in WordPress and experienced in creating UI/UX designs with Figma. Projects include Real Estate website, business data project, and various informational websites.",
+    desc: ['Designed and developed responsive website Ui with HTML', 'Created UI&UX design with Figma', 'Project niches included real estate, business analytics, etc.'],
     date: "Dec 2021 - Jul 2022",
+    techStack: ['HTML', 'CSS', 'JAVASCRIPT', 'WORDPRESS', 'FIGMA', 'SASS', 'BOOTSTRAP']
   },
 ];
 

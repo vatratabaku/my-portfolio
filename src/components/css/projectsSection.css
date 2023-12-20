@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -1px;
+  font-size: 60px;
 }
 
 .projects-cards{
@@ -73,7 +74,7 @@
   color: #ff04fb;
   width: 115px;
   height: 30px;
-  padding: 5px;
+  padding: 7px;
   background-color: #1e1f25;
   border-radius: 10px;
   text-align: center;

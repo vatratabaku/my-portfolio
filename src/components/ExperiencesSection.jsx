@@ -12,6 +12,7 @@ function ExperiencesSection() {
             date={experience.date}
             jobTitle={experience.jobTitle}
             companyName={experience.companyName}
+            techStack={experience.techStack}
           ></Experience>
         );
       })}

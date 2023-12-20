@@ -1,6 +1,7 @@
 import "./css/contactLayout.css";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 export const ContactUs = () => {
   const form = useRef();
@@ -27,8 +28,21 @@ export const ContactUs = () => {
 
   return (
     <div className="forms-wrapper">
-      <h1>CONTACT ME</h1>
-      <form ref={form} onSubmit={sendEmail}>
+      <motion.h1
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        exit={{ x: 100, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+      >
+        CONTACT ME
+      </motion.h1>
+      <motion.form
+        ref={form}
+        onSubmit={sendEmail}
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.5 }}
+      >
         <div className="firstFormRow">
           <div className="textInputWrapper">
             <input
@@ -57,10 +71,15 @@ export const ContactUs = () => {
         </div>
 
         <div className="textInputWrapper">
-          <textarea name="message"  placeholder="Message" type="text" className="textInput my-textarea" />
+          <textarea
+            name="message"
+            placeholder="Message"
+            type="text"
+            className="textInput my-textarea"
+          />
         </div>
         <input className="inputButton" type="submit" value="Send" />
-      </form>
+      </motion.form>
     </div>
   );
 };
