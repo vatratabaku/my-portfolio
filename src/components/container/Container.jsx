@@ -77,11 +77,11 @@ function Container({ href }) {
           </svg>
 
           <div className="text">
-            {" "}
+         
             <a
               className="cv-link"
-              href="Vatra Tabaku.pdf"
-              download="Vatra Tabaku.pdf"
+              href="resume.pdf"
+              download="resume.pdf"
             >
               RESUME
             </a>
