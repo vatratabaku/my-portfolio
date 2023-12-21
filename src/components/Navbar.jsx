@@ -34,7 +34,7 @@ const Navbar = () => {
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active-link" : "link"
             }
-            to="/"
+            to="/my-portfolio"
           >
             Home
           </NavLink>
