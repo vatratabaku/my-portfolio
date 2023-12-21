@@ -26,7 +26,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route
-              path="/my-portfolio"
+              path="/my-portfolio/"
               element={
                 <Home setShowMatrix={setShowMatrix} showMatrix={showMatrix} />
               }
