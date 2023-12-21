@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-
-function Container({ href }) { 
+function Container({ href }) {
   let text = "VATRA TABAKU";
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-
-
 
   useEffect(() => {
     const typingAnimation = () => {
@@ -15,7 +12,7 @@ function Container({ href }) {
         setTypedText(text.slice(0, currentIndex + 1));
         setCurrentIndex(currentIndex + 1);
       } else {
-        setTypedText(''); // Reset the text to start typing again
+        setTypedText(""); // Reset the text to start typing again
         setCurrentIndex(0);
       }
     };
@@ -28,13 +25,15 @@ function Container({ href }) {
   return (
     <div className="wraper">
       <div className="content">
-        <motion.h1
-          initial={{ y: "100%", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          data-text="VATRA TABAKU"
-        >
-        {typedText}
-        </motion.h1>
+        <div className="my-name">
+          <motion.h1
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            data-text="VATRA TABAKU"
+          >
+            {typedText}
+          </motion.h1>
+        </div>
         <motion.h4
           initial={{ y: "100%", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -48,8 +47,13 @@ function Container({ href }) {
           exit={{ x: 100, opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-      I'm a <span> Frontend Developer</span> who loves creating great user experiences and interfaces. I work with HTML, CSS, JavaScript, and React JS. I'm skilled in using advanced tools like React Hooks, Context for handling props and managing complex states, the React Router Library for building dynamic Single Page Applications (SPA). Also I have experience with some other tools like tailwind css, sass, bootstrap, and basic concepts of typescript.
-
+          I'm a <span> Frontend Developer</span> who loves creating great user
+          experiences and interfaces. I work with HTML, CSS, JavaScript, and
+          React JS. I'm skilled in using advanced tools like React Hooks,
+          Context for handling props and managing complex states, the React
+          Router Library for building dynamic Single Page Applications (SPA).
+          Also I have experience with some other tools like tailwind css, sass,
+          bootstrap, and basic concepts of typescript.
         </motion.h5>
         <motion.button
           className="button"
@@ -72,10 +76,18 @@ function Container({ href }) {
             ></path>
           </svg>
 
-          <div className="text"> <a className="cv-link" href="Vatra Tabaku.pdf" download="Vatra Tabaku.pdf">RESUME</a></div>
+          <div className="text">
+            {" "}
+            <a
+              className="cv-link"
+              href="Vatra Tabaku.pdf"
+              download="Vatra Tabaku.pdf"
+            >
+              RESUME
+            </a>
+          </div>
         </motion.button>
       </div>
-
     </div>
   );
 }

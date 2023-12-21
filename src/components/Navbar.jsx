@@ -1,14 +1,13 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import logo from "../assets/logo.png"
-import "./css/Navbar.css"
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import logo from "../assets/logo.png";
+import "./css/Navbar.css";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
-  const stagger = 0.1; // Adjust the stagger duration as needed
-
   return (
     <motion.nav
       className="navbar"
@@ -57,16 +56,16 @@ const Navbar = () => {
         <motion.li
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.10, delay: 0.6 }}
+          transition={{ duration: 0.1, delay: 0.6 }}
         >
-          <NavLink
-            className={({ isActive, isPending }) =>
-              isPending ? "pending" : isActive ? "active-link" : "link"
-            }
-            to="/projects"
+          <HashLink
+            smooth
+            to="/about/#projectsSection"
+            activeClassName="active-link"
+            inactiveClassName="link"
           >
             Projects
-          </NavLink>
+          </HashLink>
         </motion.li>
         <motion.li
           initial={{ opacity: 0, x: -20 }}
@@ -93,7 +92,6 @@ const Navbar = () => {
           transform: "rotate(90deg)",
           height: "190px",
         }}
-      
       >
         <motion.a
           href="https://www.linkedin.com/in/vatra-tabaku-a7366525b/"
