@@ -32,7 +32,7 @@ export const ContactUs = () => {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         exit={{ x: 100, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
       >
         CONTACT ME
       </motion.h1>
@@ -41,7 +41,7 @@ export const ContactUs = () => {
         onSubmit={sendEmail}
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
       >
         <div className="firstFormRow">
           <div className="textInputWrapper">
